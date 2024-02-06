@@ -1,0 +1,29 @@
+@import "cores.less";
+
+//escapings
+@breakpointTelefone: ~"(max-width: 767px)";
+
+//mixins
+.text-align {
+    text-align: center;
+}
+
+body {
+    background-color: @cor1;
+}
+
+h1 {
+    .text-align;
+    color: #corh1[corh];
+}
+
+h2 {
+    .text-align;
+    color: #corh1[corhh];
+}
+
+@media @breakpointTelefone {
+    body {
+        background-color: @cor2;
+    }
+}
